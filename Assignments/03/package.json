@@ -1,0 +1,16 @@
+{
+  "name": "RecSys",
+  "version": "1.0.0",
+  "description": "",
+  "main": "averageSlopeDownwards.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "openweathermap-node": "^1.1.2",
+    "query-overpass": "^1.5.3"
+  }
+}

@@ -1,0 +1,89 @@
+
+Versioned with GIT
+
+
+
+
+
+
+============================
+=== Task 3 - GPS2Feature ===
+============================
+
+Person 3 // Lukas Machetanz
+
+
+###
+###
+
+Datenbasis: Runtastic -- Durchschnittliche Steigung nach unten: 1/n Sum_1^n Negative Elevation in Segment/(dist(Segment Start,Segment End))
+
+Die Lösung der Aufgabe befindet sich in der Datei averageSlopeDownwards.js.
+
+
+
+
+
+###
+###
+
+Datenbasis: GPS: -- % Stufen
+
+https://wiki.openstreetmap.org/wiki/Map_Features // search for highway and steps
+https://wiki.openstreetmap.org/wiki/Tag:highway%3Dsteps
+
+Die Lösung der Aufgabe befindet sich in der Datei stepsAndCrosses.js.
+
+Leider kann ich die Funktionalität der Funktion nicht testen, da mir kein Datensatz mit Stiegen zur Verfügung steht.
+
+
+
+
+
+###
+###
+
+Datenbasis: GPS: -- Anzahl Strassenüberquerungen
+
+
+https://wiki.openstreetmap.org/wiki/Map_Features // search for highway and crossing
+https://wiki.openstreetmap.org/wiki/Tag:highway%3Dcrossing
+
+Die Lösung der Aufgabe befindet sich in der Datei stepsAndCrosses.js.
+
+Die Funktion überprüft derzeit nur auf markierte Straßenüberquerungen.
+Straßenüberquerungen, die vom Läufer an anderen Stellen durchgeführt werden können somit nicht erkannt werden. Wie würde man dies umsetzen?
+
+
+
+
+
+
+###
+###
+
+Datenbasis GPS: -- Wetter (openweathermap)
+
+https://openweathermap.org/api/weather-map-2
+
+Die Lösung der Aufgabe befindet sich in der Datei weather.js.
+
+Die Funktion kann derzeit nur das Wetter von dem aktuellen Datum liefern.
+Die Abfrage von historischen Daten mit der API von openweathermap ist möglich, jedoch sehr kostenintensiv.
+Siehe https://openweathermap.org/price
+
+
+
+
+
+###
+###
+Datenbasis: GPS: -- % Ländlich
+
+Nach Absprache mit Johannes haben wir die beiden Aufgaben (Städtisch/Ländlich) als eher schwer umsetzbar empfunden.
+Um diese Aufgabe umzusetzen müsste noch weiter definiert werden was man unter Ländlich und Städtisch versteht.
+    - Aufgrund von Bezirken in Österreich?
+    - Aufgrund von der Anzahl der Häuser, Straßen, etc. in der Umgebung?
+
+Meiner Meinung nach sollten wir dieses Feature zuerst noch einmal in der Gruppe besprechen bevor wir weitere Nachforschungen anstellen.
+
