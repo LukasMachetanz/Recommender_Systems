@@ -8,7 +8,7 @@ const fs = require("fs");
 
 
 const GPS_DATA = JSON.parse(
-  fs.readFileSync("data/run_01.json")
+  fs.readFileSync("data/run_00.json")
 );
 
 

@@ -10,7 +10,7 @@ const queryOverpass = require("query-overpass");
 
 
 const GPS_DATA = JSON.parse(
-  fs.readFileSync("data/run_small_03.json")
+  fs.readFileSync("data/run_00.json")
 );
 
 
@@ -68,7 +68,6 @@ const getPercentOfSteps = (GPSData, radius = 1.0, timeout = 1000) => {
 	const queryPart = `node[\"highway\"=\"steps\"]`;
 	queryFor(queryPart, GPSData, radius, timeout)
 		.then(({ features }) => {
-			console.log(features);
 			console.log('Percentage of steps: ', features.length / GPSData.length );
 		})
 		.catch((error) => {
